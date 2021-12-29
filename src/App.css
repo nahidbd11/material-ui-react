@@ -1,0 +1,32 @@
+.btn {
+	transform: translate(15px);
+}
+/* 
+.MuiButton-outlined {
+	transform: rotate(-3deg);
+} */
+
+.dflex {
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+@media (min-width: 576px) {
+	.dflex {
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 620px) {
+	.dflex {
+		justify-content: center;
+	}
+}
