@@ -6,6 +6,7 @@ import { Container, Grid } from "@mui/material";
 
 import Rightbar from "./component/Rightbar";
 import Feed from "./component/Feed";
+import Addcomp from "./component/Addcomp";
 
 // function App() {
 // 	return (
@@ -48,7 +49,11 @@ function App() {
 		<div>
 			<Navbar />
 
-			<Grid container wrap="nowrap" gap={{ md: 12, sm: 4, xs: 1 }}>
+			<Grid
+				container
+				wrap="nowrap"
+				gap={{ md: 12, sm: 4, xs: 0.5 }}
+			>
 				<Grid item sm={2} xs={2}>
 					<Leftbar />
 				</Grid>
@@ -59,6 +64,9 @@ function App() {
 					<Rightbar />
 				</Grid>
 			</Grid>
+			<Addcomp
+			
+			/>
 		</div>
 	);
 }
