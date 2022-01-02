@@ -6,12 +6,9 @@ const Feed = () => {
 	return (
 		<div style={{ marginTop: "5rem" }}>
 			{cardData.map((carditem) => {
-				const { text, imgsrc,title } = carditem;
+				const { text, imgsrc, title, id } = carditem;
 				return (
-					<Cardcomp
-						key={imgsrc}
-						{...{ text, imgsrc, title }}
-					/>
+					<Cardcomp key={id} {...{ text, imgsrc, title }} />
 				);
 			})}
 		</div>

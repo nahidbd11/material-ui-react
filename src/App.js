@@ -39,6 +39,7 @@ import Addcomp from "./component/Addcomp";
 // }
 
 const rightbarstyle = (theme) => ({
+	marginRight: "20px",
 	[theme.breakpoints.down("sm")]: {
 		display: "none",
 	},
@@ -57,16 +58,14 @@ function App() {
 				<Grid item sm={2} xs={2}>
 					<Leftbar />
 				</Grid>
-				<Grid item sm={7} xs={10} md={5}>
+				<Grid item sm={7} xs={10} md={8}>
 					<Feed />
 				</Grid>
 				<Grid item sm={2} sx={rightbarstyle}>
 					<Rightbar />
 				</Grid>
 			</Grid>
-			<Addcomp
-			
-			/>
+			<Addcomp />
 		</div>
 	);
 }

@@ -14,6 +14,7 @@ const Cardcomp = ({ text, imgsrc, title }) => {
 			<CardMedia
 				component="img"
 				height="100%"
+				sx={{ objectFit: "cover" }}
 				src={require(`../assets/img/${imgsrc}`)}
 				alt="green iguana"
 			/>
